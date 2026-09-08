@@ -3,8 +3,6 @@
 A Machine Learning project that predicts student exam scores based on academic, behavioral, and demographic factors.
 
 ## 🌐 Live Demo
-<<<<<<< HEAD
-
 🚀 **Try the deployed application:**
 
 👉 https://sandeep-student-performance-predictor-ml.streamlit.app/
@@ -18,25 +16,6 @@ A Machine Learning project that predicts student exam scores based on academic, 
 # 📌 Project Overview
 
 The **Student Performance Prediction** system uses Machine Learning regression algorithms to predict a student's expected exam score.
-
-The project analyzes academic, behavioral, and demographic factors that may be associated with student performance.
-=======
-
-🚀 **Try the deployed application:**
-
-👉 [Student Performance Prediction - Live Demo](https://sandeep-student-performance-predictor-ml.streamlit.app/)
-
-## 💻 GitHub Repository
-
-👉 [GitHub Repository](https://github.com/SandeepGautam05-hub/student-performance-prediction)
-
----
-
-## 📌 Project Overview
-
-The **Student Performance Prediction** system uses Machine Learning regression algorithms to predict a student's expected exam score.
->>>>>>> 495af9d (Update README)
-
 The project analyzes academic, behavioral, and demographic factors that may be associated with student performance.
 
 ### The project includes:
@@ -56,13 +35,6 @@ The project analyzes academic, behavioral, and demographic factors that may be a
 - Cloud deployment
 
 ---
-
-<<<<<<< HEAD
-# 🎯 Project Objectives
-=======
-## 🎯 Project Objectives
->>>>>>> 495af9d (Update README)
-
 The main objectives of this project are:
 
 1. Analyze factors affecting student examination performance.
@@ -74,15 +46,9 @@ The main objectives of this project are:
 7. Build an interactive Streamlit application.
 8. Deploy the application online for public access.
 
----
-
 # 📊 Dataset
 
-<<<<<<< HEAD
 The project uses a **Student Performance Factors** dataset obtained from Kaggle.
-=======
-The project uses the **Student Performance Factors** dataset obtained from Kaggle.
->>>>>>> 495af9d (Update README)
 
 ### Dataset Information
 
