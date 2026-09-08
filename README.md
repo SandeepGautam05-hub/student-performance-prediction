@@ -34,8 +34,7 @@ The project analyzes academic, behavioral, and demographic factors that may be a
 - Personalized performance recommendations
 - Cloud deployment
 
----
-The main objectives of this project are:
+### The main objectives of this project are:
 
 1. Analyze factors affecting student examination performance.
 2. Perform data cleaning and preprocessing.
@@ -106,11 +105,9 @@ The dataset was divided using an **80:20 ratio**.
 ```text
 Training Samples : 5285
 Testing Samples  : 1322
-<<<<<<< HEAD
-=======
-
 ```
-### 🤖 Machine Learning Models
+# 🤖 Machine Learning Models
+
 
 Two regression algorithms were trained and evaluated.
 
@@ -132,15 +129,17 @@ MAE  : 1.09
 RMSE : 2.16
 R²   : 0.6693 
 
-```markdown
-### 🏆 Model Comparison
+---
+
+# 🏆 Model Comparison
 
 | Model | MAE ↓ | RMSE ↓ | R² ↑ |
 |---|---:|---:|---:|
 | Linear Regression | 0.45 | 1.80 | 0.7696 |
 | Random Forest Regressor | 1.09 | 2.16 | 0.6693 |
+---
 
-### 🏆 Final Model
+# 🏆 Final Model
 
 Linear Regression was selected as the final model because it achieved:
 
@@ -151,8 +150,10 @@ Linear Regression was selected as the final model because it achieved:
 The final trained model was saved using Joblib:
 model/student_model.pkl
 
+---
 
-### 📈 Exploratory Data Analysis
+
+# 📈 Exploratory Data Analysis
 
 Exploratory Data Analysis was performed using:
 
@@ -163,39 +164,32 @@ Seaborn
 The following visualizations were created:
 
 1. Exam Score Distribution
-
 A histogram was used to understand the distribution of student examination scores.
 
 2. Hours Studied vs Exam Score
-
 A scatter plot was used to analyze the relationship between study hours and exam scores.
-
 Observation: Students who studied more hours generally showed higher exam scores.
 
 3. Attendance vs Exam Score
-
 A scatter plot was used to analyze the relationship between attendance and exam performance.
-
 Observation: Attendance showed a strong positive relationship with exam scores.
 
 4. Previous Scores vs Exam Score
-
 A scatter plot was used to compare previous academic performance with current examination scores.
 
 5. Motivation Level vs Exam Score
-
 A box plot was used to compare exam scores across different motivation levels.
 
 6. Parental Involvement vs Exam Score
-
 A box plot was used to compare exam scores based on parental involvement.
 
 7. Correlation Heatmap
-
 A correlation heatmap was created to analyze relationships between numerical variables.
 
 
-### 📊 Important EDA Findings
+---
+
+# 📊 Important EDA Findings
 
 The numerical features with the strongest relationships with Exam_Score were:
 
@@ -208,16 +202,23 @@ The numerical features with the strongest relationships with Exam_Score were:
 | Physical Activity |                       0.028 |
 | Sleep Hours       |                      -0.017 |
 
+---
 
-## Key Observations
+# Key Observations
 
 📚 Attendance had the strongest positive correlation with exam scores.
+
 ⏰ Hours Studied also showed a strong positive relationship with exam scores.
+
 📝 Previous Scores showed a smaller positive relationship.
+
 👨‍👩‍👧 Parental Involvement showed slightly higher average scores at higher involvement levels.
+
 📊 Correlation represents association and does not necessarily imply causation.
 
-### 🏗️ Project Architecture
+---
+
+# 🏗️ Project Architecture
 
                          ┌─────────────────────┐
                          │    Kaggle Dataset   │
@@ -289,8 +290,9 @@ The numerical features with the strongest relationships with Exam_Score were:
                 ┌──────────────────┐  ┌──────────────────┐
                 │Performance Level │  │ Recommendations  │
                 └──────────────────┘  └──────────────────┘
+---
 
-### 🔄 Complete Project Workflow
+# 🔄 Complete Project Workflow
 
 Kaggle Dataset
       ↓
@@ -334,8 +336,9 @@ Deploy Application
       ↓
 Live Streamlit Application
 
-### 📁 Project Structure
+---
 
+# 📁 Project Structure
 Student Performance Prediction/
 │
 ├── 📂 dataset/
@@ -353,6 +356,9 @@ Student Performance Prediction/
 ├── 📄 README.md
 └── 📄 .gitignore
 
+---
+
+
 ## File & Folder Description
 
 | File / Folder      | Purpose                                     |
@@ -366,12 +372,16 @@ Student Performance Prediction/
 | `README.md`        | Project documentation                       |
 | `.gitignore`       | Files excluded from Git                     |
 
+---
 
-### 🌐 Streamlit Application
+
+# 🌐 Streamlit Application
 
 The trained machine learning model is integrated into an interactive Streamlit web application.
 
-# 📚 Academic Information
+---
+
+### 📚 Academic Information
 
 Users can enter:
 
@@ -380,7 +390,7 @@ Attendance
 Previous Scores
 Tutoring Sessions
 
-# 🧠 Behavioral Information
+### 🧠 Behavioral Information
 
 Users can enter:
 
@@ -389,7 +399,7 @@ Motivation Level
 Physical Activity
 Extracurricular Activities
 
-# 👨‍🎓 Student Information
+### 👨‍🎓 Student Information
 
 Users can enter:
 
@@ -405,7 +415,7 @@ Learning Disabilities
 School Type
 Distance From Home
 
-# Application Output
+### Application Output
 
 The application provides:
 
@@ -423,21 +433,30 @@ The application provides:
 |         60 – 74 | 🟡 Average           |
 |        Below 60 | 🔴 Needs Improvement |
 
+---
 
-### 💡 Personalized Recommendations
+
+# 💡 Personalized Recommendations
 
 The application generates recommendations based on student inputs.
 
 Examples include:
 
 📅 Improve attendance if attendance is low.
+
 📚 Increase study hours if study time is low.
+
 📝 Focus on academic fundamentals if previous scores are low.
+
+
 😴 Maintain healthy sleep habits.
+
 👨‍🏫 Consider additional tutoring support.
+
 🎯 Develop consistent study habits to improve motivation.
 
-### 🛠️ Technologies Used
+
+# 🛠️ Technologies Used
 
 | Technology                | Purpose                   |
 | ------------------------- | ------------------------- |
@@ -456,35 +475,48 @@ Examples include:
 
 
 
-### ▶️ How to Run Locally
+# ▶️ How to Run Locally
 
 1. Clone the Repository
+   
 </>Bash
+
 git clone https://github.com/SandeepGautam05-hub/student-performance-prediction.git
 
-2. Navigate to the Project Directory
+3. Navigate to the Project Directory
+   
 </>Bash
+
 cd student-performance-prediction
 
-3. Create a Virtual Environment
+5. Create a Virtual Environment
+   
 </>Bash
+
 python -m venv venv
 
-4. Activate the Virtual Environment
-Windows 
+7. Activate the Virtual Environment
+Windows
+
 </>Bash
+
 venv\Scripts\activate
 
-5. Install Dependencies
+9. Install Dependencies
+    
 </>Bash
+
 pip install -r requirements.txt
 
-6. Run the Streamlit Application
+11. Run the Streamlit Application
+    
 </>Bash
+
 streamlit run app.py
 The application will open in your web browser.
 
-### 🧪 Model Training
+
+# 🧪 Model Training
 
 To retrain the machine learning models, run:
 
@@ -492,7 +524,7 @@ python train_model.py
 The trained model will be saved as:
 model/student_model.pkl
 
-### 📓 Jupyter Notebook
+# 📓 Jupyter Notebook
 
 The complete Exploratory Data Analysis is available in:
 notebooks/student_analysis.ipynb
@@ -511,29 +543,29 @@ Correlation heatmap
 Grouped analysis
 
 
-### 📈 Model Evaluation Metrics
+# 📈 Model Evaluation Metrics
 
 The project uses three important regression evaluation metrics.
 
-# Mean Absolute Error (MAE)
+### Mean Absolute Error (MAE)
 
 MAE measures the average absolute difference between actual and predicted values.
 
 Lower MAE is better.
 
-# Root Mean Squared Error (RMSE)
+### Root Mean Squared Error (RMSE)
 
 RMSE measures the square root of the average squared prediction error.
 
 Lower RMSE is better.
 
-# R² Score
+### R² Score
 
 R² measures how much variation in the target variable is explained by the model.
 
 Higher R² is better.
 
-### 📌 Final Project Results
+# 📌 Final Project Results
 The final selected model was Linear Regression.
 
 MAE  : 0.45
@@ -558,7 +590,7 @@ All EDA visualizations are available in:
 notebooks/student_analysis.ipynb
 
 
-### 🚀 Future Improvements
+# 🚀 Future Improvements
 
 The project can be improved further by implementing:
 
@@ -576,7 +608,7 @@ User authentication
 Cloud-based data storage
 More advanced recommendation systems
 
-### 📚 Learning Outcomes
+# 📚 Learning Outcomes
 
 Through this project, I implemented and learned:
 
@@ -596,10 +628,10 @@ Git and GitHub
 Cloud deployment
 
 
-### 👨‍💻 Author
-# Sandeep Gautam
+# 👨‍💻 Author
+### Sandeep Gautam
 
-# B.Tech – Artificial Intelligence & Machine Learning
+### B.Tech – Artificial Intelligence & Machine Learning
 
 🔗 Project Links
 
@@ -612,7 +644,7 @@ https://github.com/SandeepGautam05-hub/student-performance-prediction
 ⭐ If you found this project useful, consider giving the repository a star!
 
 
-### 📌 Disclaimer
+# 📌 Disclaimer
 
 This project is developed for educational and demonstration purposes.
 
