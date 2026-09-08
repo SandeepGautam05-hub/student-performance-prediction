@@ -2,146 +2,114 @@
 
 A Machine Learning project that predicts student exam scores based on academic, behavioral, and demographic factors.
 
-## 📌 Project Overview
+## 🌐 Live Demo
 
-The Student Performance Prediction system uses machine learning regression algorithms to predict a student's expected exam score.
+🚀 **Try the deployed application:**
+
+👉 https://sandeep-student-performance-predictor-ml.streamlit.app/
+
+## 💻 GitHub Repository
+
+👉 https://github.com/SandeepGautam05-hub/student-performance-prediction
+
+---
+
+# 📌 Project Overview
+
+The **Student Performance Prediction** system uses Machine Learning regression algorithms to predict a student's expected exam score.
+
+The project analyzes academic, behavioral, and demographic factors that may be associated with student performance.
 
 The project includes:
 
 - Data preprocessing
-- Exploratory Data Analysis
+- Exploratory Data Analysis (EDA)
+- Missing value handling
 - Feature encoding
 - Train-test splitting
 - Machine learning model training
 - Model evaluation
 - Model comparison
+- Model selection
+- Model serialization
 - Streamlit web application
-- Performance recommendations
+- Personalized performance recommendations
+- Cloud deployment
 
-## 📊 Dataset
+---
 
-The project uses a student performance dataset obtained from Kaggle.
+# 🎯 Project Objectives
 
-The dataset contains:
+The main objectives of this project are:
 
-- 6,607 student records
-- 20 columns
+1. Analyze factors affecting student examination performance.
+2. Perform data cleaning and preprocessing.
+3. Explore relationships between different student factors and exam scores.
+4. Train multiple machine learning regression models.
+5. Compare model performance using evaluation metrics.
+6. Select the best-performing model.
+7. Build an interactive Streamlit application.
+8. Deploy the application online for public access.
 
-The target variable is:
+---
 
-`Exam_Score`
+# 📊 Dataset
+
+The project uses a **Student Performance Factors** dataset obtained from Kaggle.
+
+### Dataset Information
+
+- **Total Records:** 6,607
+- **Total Columns:** 20
+- **Target Variable:** `Exam_Score`
 
 ### Important Features
 
-- Hours Studied
-- Attendance
-- Previous Scores
-- Sleep Hours
-- Tutoring Sessions
-- Physical Activity
-- Motivation Level
-- Parental Involvement
-- Access to Resources
-- Teacher Quality
-- Family Income
-- Peer Influence
-- Parental Education Level
-- Distance From Home
-- Gender
+| Feature | Description |
+|---|---|
+| `Hours_Studied` | Number of hours spent studying |
+| `Attendance` | Student attendance percentage |
+| `Parental_Involvement` | Level of parental involvement |
+| `Access_to_Resources` | Availability of learning resources |
+| `Extracurricular_Activities` | Participation in extracurricular activities |
+| `Sleep_Hours` | Average number of sleeping hours |
+| `Previous_Scores` | Previous academic scores |
+| `Motivation_Level` | Student motivation level |
+| `Internet_Access` | Availability of internet access |
+| `Tutoring_Sessions` | Number of tutoring sessions |
+| `Family_Income` | Family income category |
+| `Teacher_Quality` | Teacher quality |
+| `School_Type` | Type of school |
+| `Peer_Influence` | Influence of peers |
+| `Physical_Activity` | Physical activity level |
+| `Learning_Disabilities` | Learning disability information |
+| `Parental_Education_Level` | Parent education level |
+| `Distance_from_Home` | Distance from home |
+| `Gender` | Student gender |
+| `Exam_Score` | Student examination score |
 
-## 🧹 Data Preprocessing
+---
+
+# 🧹 Data Preprocessing
 
 The following preprocessing steps were performed:
 
-1. Checked dataset shape and information
-2. Checked missing values
-3. Removed duplicate rows
-4. Handled missing categorical values using the mode
-5. Separated features and target
-6. Applied One-Hot Encoding to categorical variables
-7. Split the dataset into training and testing sets
+1. Loaded the dataset using Pandas.
+2. Checked the dataset shape and structure.
+3. Examined data types.
+4. Checked for missing values.
+5. Checked for duplicate records.
+6. Handled missing categorical values using the mode.
+7. Separated features and target variable.
+8. Identified numerical and categorical features.
+9. Applied One-Hot Encoding to categorical variables.
+10. Created a preprocessing pipeline.
+11. Split the dataset into training and testing data.
 
-The dataset was divided using:
+### Train-Test Split
 
-- 80% training data
-- 20% testing data
+The dataset was divided using an **80:20 ratio**.
 
-## 🤖 Machine Learning Models
-
-Two regression algorithms were tested:
-
-### 1. Linear Regression
-
-Performance:
-
-- MAE: 0.45
-- RMSE: 1.80
-- R² Score: 0.7696
-
-### 2. Random Forest Regressor
-
-Performance:
-
-- MAE: 1.09
-- RMSE: 2.16
-- R² Score: 0.6693
-
-## 🏆 Model Selection
-
-Linear Regression performed better than Random Forest based on MAE, RMSE and R² Score.
-
-Therefore, Linear Regression was selected as the final prediction model.
-
-## 📈 Exploratory Data Analysis
-
-EDA was performed using:
-
-- Matplotlib
-- Seaborn
-- Pandas
-
-Visualizations included:
-
-- Exam Score distribution
-- Hours Studied vs Exam Score
-- Attendance vs Exam Score
-- Previous Scores vs Exam Score
-- Motivation Level vs Exam Score
-- Parental Involvement vs Exam Score
-- Correlation heatmap
-
-## 🌐 Streamlit Application
-
-The trained model is integrated into a Streamlit web application.
-
-Users can enter:
-
-- Academic information
-- Student information
-- Behavioral information
-
-The application provides:
-
-- Predicted exam score
-- Performance category
-- Score visualization
-- Personalized recommendations
-
-## 🛠️ Technologies Used
-
-- Python
-- Pandas
-- NumPy
-- Scikit-learn
-- Matplotlib
-- Seaborn
-- Joblib
-- Streamlit
-- Jupyter Notebook
-
-## ▶️ How to Run
-
-### 1. Install dependencies
-
-```bash
-pip install -r requirements.txt
+```text
+Training Samples : 5285
+Testing Samples  : 1322
